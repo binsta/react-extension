@@ -1,1 +1,3 @@
-console.log("contentScript running")
+chrome.runtime.sendMessage("From contentScript!", (response) => {
+    console.log(response)
+})
